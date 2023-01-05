@@ -1,18 +1,18 @@
 
-            h1{
-                font-family: sans-serif; 
-                text-align: center; 
-                color: #534b4b;
-            }
-            p{
-                font-family: sans-serif; 
-                text-align: center; 
-                color: #534b4b; 
-            }
-            a{
-                color: #5c0070;
-                text-decoration: none;
-            }
-            a:hover{
-                text-decoration: underline;
-            }
+h1{
+    font-family: sans-serif; 
+    text-align: center; 
+    color: #534b4b;
+}
+p{
+    font-family: sans-serif; 
+    text-align: center; 
+    color: #534b4b; 
+}
+a{
+    color: #5c0070;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    }
