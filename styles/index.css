@@ -1,0 +1,18 @@
+body{
+    margin: 50px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+#danasnji-zadatak{
+    color: #C34A36;
+    font-size: 36px;
+    font-weight: bold;
+}
+
