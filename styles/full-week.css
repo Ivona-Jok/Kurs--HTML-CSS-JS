@@ -4,7 +4,7 @@ header{
 
 h1{
     font-size: 48px;
-    margin: 50px 0;
+    margin: 0;
 }
 
 #description{
@@ -17,6 +17,8 @@ a{
     color: #FFD9BA;
     border: 1px solid #783f32;
     border-radius: 5px ;
+    display: inline-block;
+    margin: 0;
 }
 a:hover{
     background-color: #5C0000;
@@ -24,7 +26,6 @@ a:hover{
 }
 
 ol{
-    padding: 10px;
     list-style: none;
     color: #783f32;
     width: 800px;
@@ -35,11 +36,11 @@ li{
     margin: 25px;
     background-color: #FFD9BA;
     border-radius: 6px;
+    box-shadow: 1px 1px 5px #574141;
 }
-/* li:hover{
-    border: 1px solid #fccaa1;
-    height: 110px;
-}  */
+li:hover{
+    border: 1px solid #BB8376;
+} 
 
 h2{
     color: #574141;
