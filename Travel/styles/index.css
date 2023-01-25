@@ -1,6 +1,6 @@
 #hero{
     height: 800px;
-    background-image: url("/Travel/images/ocean.jpg");
+    background-image: url("ocean.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -44,3 +44,48 @@
     background-color: #865f81 ;
 }
 
+#highlights{
+    padding: 24px;
+    background: linear-gradient(45deg , #E2E0F4 , #E4FFFD);
+}
+
+#highlights h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #525252;
+    margin: 24px 0;
+}
+
+#highlights ul{
+    list-style: none;
+}
+
+#destinations{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.destination{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.destination p{
+    text-align: center;
+    font-size: 24px;
+    color: #525252;
+    margin: 20px 0;
+}
+.destination strong{
+    color: #427994;
+}
+.destination img{
+    height: 200px;
+    width: 250px;
+    box-shadow: 2px 2px 8px #1c1c1c;
+    border-radius: 10px;
+    object-fit: fill;
+}
