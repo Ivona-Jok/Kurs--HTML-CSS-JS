@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,200;1,600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Demo Form</h1>
+    <form action="/" method="GET">
+
+        <!-- Osnovni podaci -->
+        <section>
+            <label for="username">Your name</label>
+                <input type="text" name="user-name" id="username" required maxlength="30">
+            <label for="email">Your email address</label>
+                <input type="email" name="email" id="email" required>   
+            <label for="pass">Your password</label>
+                <input type="password" name="pass" id="pass" required minlength="7">        
+        </section>
+        
+        <!-- Privatni podaci -->
+        <section>
+            <label for="age">Your age</label>
+                <input type="number" step="1" name="age" id="age" required minlength="17"> 
+            <label for="birthday">Your date of birth</label>
+                <input type="date" name="birthday" id="birthday" required min="2005-01-01">
+            <label for="fav-color">Your favorite color</label>
+                <select name="fav-color" name="fav-color" id="fav-color">
+                    <option value="red">Red</option>
+                    <option value="white">White</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+        </section>
+
+        <!-- Poruka -->
+        <section>
+            <label for="message">Your message</label>
+            <textarea name="message" id="message" cols="20" rows="5"></textarea>
+        </section>
+        
+
+        <hr/>
+
+        <!-- Verifikacija -->
+        <section>
+            <h2>How should we verify yor account?</h2>
+                <li class="form-control">
+                    <input type="radio" name="verify" id="verify-sms" value="text-message" required>
+                    <label for="verify-sms">Via text message (SMS)</label>
+                </li>
+                <li class="form-control">
+                    <input type="radio" name="verify" id="verify-call" value="phone" required>
+                        <label for="verify-call">Via phone call</label>
+                </li>
+                <li class="form-control">
+                    <input type="radio" name="verify" id="verify-email" value="email" required>
+                        <label for="verify-email">Via email</label>
+                </li>
+        </section>
+        
+        <hr/>
+
+        <!-- Kontkt -->
+        <section>
+            <h2>How should we contact you?</h2>
+            <ul>
+                <li class="form-control"> 
+                    <input type="checkbox" id="agree-terms" name="terms" value="contact-me" required/> 
+                    <label for="agree-terms">Contact me via email</label>
+                </li>
+                <li class="form-control"> 
+                    <input type="checkbox" id="agree-terms" name="terms"  value="contact-me" required/> 
+                    <label for="agree-terms">Contact me via phone</label>
+                </li>
+            </ul>
+        </section>
+
+        <hr/>
+        
+        <!-- Pravar & uslovi -->
+        <div class="form-control"> 
+            <input type="checkbox" id="agree-terms" name="terms" required/> 
+            <label for="agree-terms">Agree to terms?</label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

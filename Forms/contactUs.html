@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/contactUs.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,200;1,600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Conact Us</h1>
+    <form action="/" method="GET">
+
+        <!-- Osnovni podaci -->
+        <section>
+            <h2>How can we help you?</h2>
+            <label for="username">Your Name</label>
+                <input type="text" name="user-name" id="username" required maxlength="30">
+            <label for="email">Your E-mail address</label>
+                <input type="email" name="email" id="email" required>
+            <label for="phone">Your Mobile Phone</label>
+                <input type="tel" name="phone" id="phone" required minlength="5">
+
+            <label for="pass">Your Password</label>
+                <input type="password" name="pass" id="pass">        
+        </section>
+
+        <!-- Poruka -->
+        <section>
+            <label for="message">Your message</label>
+            <textarea name="message" id="message" cols="20" rows="5" maxlength="200"></textarea>
+        </section>
+
+
+        <section>
+            <label for="search">How did you find us?</label>
+            <select name="search" id="search">
+                <option value="search">Web Search</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+            </select>
+        </section>
+
+
+        <section></section>
+            <h2>How should we reply?</h2>
+            <ul>
+                <li  class="inline-control">
+                    <input type="radio" name="reply" id="reply-phone" value="phone">
+                    <label for="reply-phone">Call me</label>
+                </li>
+                <li   class="inline-control">
+                    <input type="radio" name="reply" id="reply-email" value="email">
+                    <label for="reply-email">Send me an email</label>
+                </li>
+                <li   class="inline-control">
+                    <input type="radio" name="reply" id="reply-none" value="none">
+                    <label for="reply-none">Don't reply</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pravar & uslovi -->
+        <div class="form-control"> 
+            <input type="checkbox" id="agree-terms" name="terms" required/> 
+            <label for="agree-terms">Agree to terms?</label>
+        </div>
+
+        <!-- Submit & Clear -->
+        <section id="btn">
+            <button type="reset" class="btn-empty">Clear</button>
+            <button type="submit" class="btn-filled">Submit</button>
+        </section>
+
+    </form>
+    
+</body>
+</html>
