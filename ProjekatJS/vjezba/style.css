@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+    margin: 4rem;
+    padding: 3rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 180, 180);
+}
